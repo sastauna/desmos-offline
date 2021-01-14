@@ -1,0 +1,26 @@
+{
+  "name": "desmos-offline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sastauna/desmos-offline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sastauna/desmos-offline/issues"
+  },
+  "homepage": "https://github.com/sastauna/desmos-offline#readme",
+  "devDependencies": {
+    "electron": "^11.1.1"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
