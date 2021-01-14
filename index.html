@@ -9,15 +9,16 @@
 	<script src = "src/script.js"></script>
 </head>
 <body style="background: white;" onload = "onload()">
-	<div id = "navigation">
-		<button onclick="clear()">Clear</button>
+	<div id = "ds-nav">
 		<button onclick="openFile()">Open File</button>
-		<button onclick="warnSave()">Import Package</button>
-		<button onclick="newPackage()">New Package</button>
+		<button onclick="warnSave()">Import Module</button>
 		<button onclick="save()">Save</button>
 		<button onclick="saveAs()">Save As</button>
-		<div id = "name-container">
-			<span id="ds-project-or-package">Project</span> Name: <input id="ds-name" value="Untitled">
+		<div id = "ds-name-container">
+			<span id="ds-project-or-module">Project</span> Name: <input id="ds-name" value="Untitled">
+		</div>
+		<div id = "ds-is-module-container">
+			Is Module: <input id="ds-is-module" type="checkbox" onclick="setIsModule(this.checked)"> <span id="ds-module-letter-container" hidden="true">Module letter: <input id="ds-module-letter"></span>
 		</div>
 	</div>
 	<div id = "calculator"></div>
