@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Desmos Offline</title> 
+	<link href="style/style.css" rel="stylesheet">
+	<script src="src/fix-node.js"></script>
+	<script src="src/desmos/desmos.min.js"></script>
+	<script src = "src/script.js"></script>
+</head>
+<body style="background: white;" onload = "onload()">
+	<div id = "navigation">
+		<button onclick="clear()">Clear</button>
+		<button onclick="openFile()">Open File</button>
+		<button onclick="importPackage()">Import Package</button>
+		<button onclick="newPackage()">New Package</button>
+		<button onclick="save()">Save</button>
+		<button onclick="saveAs()">Save As</button>
+		<div id = "name-container">
+			<span id="ds-project-or-package">Project</span> Name: <input id="ds-name" value="Untitled">
+		</div>
+	</div>
+	<div id = "calculator"></div>
+</body>
+</html>
