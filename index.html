@@ -2,25 +2,32 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Desmos Offline</title> 
+	<title>Desmos Offline</title>
+
+	<link href="vendor/desmos.css" rel="stylesheet">
 	<link href="style/style.css" rel="stylesheet">
+
 	<script src="src/fix-node.js"></script>
-	<script src="src/desmos/desmos.min.js"></script>
-	<script src = "src/script.js"></script>
+	<script src="vendor/desmos.min.js"></script>
+
+	<script src="src/script.js"></script>
 </head>
-<body style="background: white;" onload = "onload()">
-	<div id = "ds-nav">
+<body style="background: white;" onload="onload()">
+	<div id="ds-nav">
 		<button onclick="openFile()">Open File</button>
 		<button onclick="warnSave()">Import Module</button>
 		<button onclick="save()">Save</button>
 		<button onclick="saveAs()">Save As</button>
-		<div id = "ds-name-container">
-			<span id="ds-project-or-module">Project</span> Name: <input id="ds-name" value="Untitled">
+		<div id="ds-name-container">
+			<span id="ds-project-or-module">Project</span>
+			Name: <input id="ds-name" value="Untitled"/>
 		</div>
-		<div id = "ds-is-module-container">
-			Is Module: <input id="ds-is-module" type="checkbox" onclick="setIsModule(this.checked)"> <span id="ds-module-letter-container" hidden="true">Module letter: <input id="ds-module-letter"></span>
+		<div id="ds-is-module-container">
+			Is Module: <input id="ds-is-module" type="checkbox" onclick="setIsModule(this.checked)"/>
+			<span id="ds-module-letter-container" hidden></span>
+			Module letter: <input id="ds-module-letter"/>
 		</div>
 	</div>
-	<div id = "calculator"></div>
+	<div id="calculator"></div>
 </body>
 </html>
