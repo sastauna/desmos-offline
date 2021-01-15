@@ -9,7 +9,7 @@ function createWindow () {
 			enableRemoteModule: true
 		}
 	})
-	win.loadFile('index.html')
+	win.loadFile('desmos.html')
 }
 
 app.whenReady().then(createWindow)
